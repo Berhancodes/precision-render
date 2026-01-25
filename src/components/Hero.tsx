@@ -5,11 +5,11 @@ import { ArrowDown } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle">
-      {/* Background subtle grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      {/* Subtle dot pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(hsl(25_15%_18%/0.04)_1px,transparent_1px)] bg-[size:32px_32px]" />
       
-      {/* Glow effect */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+      {/* Soft glow effect */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-primary/8 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container relative z-10 px-6 text-center">
         <motion.div
