@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { ArrowDown } from "lucide-react";
+import avatarImage from "@/assets/avatar.png";
 
 const Hero = () => {
   return (
@@ -18,6 +19,20 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-8"
         >
+          {/* Avatar */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            className="flex justify-center"
+          >
+            <img
+              src={avatarImage}
+              alt="Berhan"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-card shadow-lg"
+            />
+          </motion.div>
+
           {/* Greeting */}
           <motion.p
             initial={{ opacity: 0 }}
