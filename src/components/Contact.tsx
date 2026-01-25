@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "https://github.com/berhancodes", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/a-berhan-7158a5278", label: "LinkedIn" },
 ];
 
 const Contact = () => {
