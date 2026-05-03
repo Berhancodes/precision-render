@@ -8,7 +8,7 @@ const projects = [
     description: "A modern web application built with React and TypeScript, featuring real-time updates and a sleek UI.",
     tags: ["React", "TypeScript", "Tailwind"],
     image: gentlyresetImg,
-    liveUrl: "#",
+    liveUrl: "https://gentlyreset.com",
     githubUrl: "#",
     currentlyBuilding: true,
   },
