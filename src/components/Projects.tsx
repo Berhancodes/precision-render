@@ -66,11 +66,13 @@ const Projects = () => {
                     🚧 Currently Building
                   </span>
                 )}
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                <div className={`w-full h-48 flex items-center justify-center transition-transform duration-500 group-hover:scale-110 ${project.currentlyBuilding ? 'bg-[hsl(35,45%,90%)]' : ''}`}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className={project.currentlyBuilding ? "h-40 w-auto object-contain" : "w-full h-full object-cover"}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 {/* Overlay links */}
