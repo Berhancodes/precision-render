@@ -60,6 +60,11 @@ const Projects = () => {
               className="group rounded-2xl overflow-hidden glass shadow-card hover:shadow-glow transition-all duration-500"
             >
               <div className="relative overflow-hidden">
+                {project.currentlyBuilding && (
+                  <span className="absolute top-3 left-3 z-10 px-3 py-1 text-xs font-bold bg-primary text-primary-foreground rounded-full animate-pulse">
+                    🚧 Currently Building
+                  </span>
+                )}
                 <img
                   src={project.image}
                   alt={project.title}
