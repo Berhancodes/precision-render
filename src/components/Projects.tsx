@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import gentlyresetImg from "@/assets/gentlyreset.png";
 
 const projects = [
   {
     title: "GentlyReset",
     description: "A modern web application built with React and TypeScript, featuring real-time updates and a sleek UI.",
     tags: ["React", "TypeScript", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop",
+    image: gentlyresetImg,
     liveUrl: "#",
     githubUrl: "#",
     currentlyBuilding: true,
