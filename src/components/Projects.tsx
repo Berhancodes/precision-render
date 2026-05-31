@@ -85,14 +85,14 @@ const Projects = () => {
                     className="flex items-center gap-2 px-4 py-2 bg-foreground text-background text-sm font-semibold rounded-lg border-2 border-foreground hover:-translate-y-0.5 transition shadow-[3px_3px_0_0_hsl(var(--primary))]"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    live demo
+                    Live Demo
                   </a>
                   <a
                     href={project.githubUrl}
                     className="flex items-center gap-2 px-4 py-2 bg-card text-sm font-semibold rounded-lg border-2 border-dashed border-foreground/40 hover:rotate-2 transition"
                   >
                     <Github className="w-4 h-4" />
-                    code
+                    Code
                   </a>
                 </div>
               </div>
