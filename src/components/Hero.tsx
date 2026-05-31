@@ -47,28 +47,28 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
             className="font-handwritten text-3xl md:text-4xl text-primary rotate-tiny-left inline-block"
           >
-            hi there, welcome in ✿
+            Hi there, welcome in ✿
           </motion.p>
 
           {/* Main heading */}
           <h1 className="font-display italic text-5xl md:text-7xl lg:text-8xl font-black tracking-tight">
-            i'm{" "}
+            I'm{" "}
             <span className="text-gradient wiggle-underline">Berhan</span>
           </h1>
 
           {/* Typing animation */}
           <div className="h-12 md:h-16 flex items-center justify-center">
             <span className="text-2xl md:text-3xl text-muted-foreground font-light font-handwritten">
-              currently a{" "}
+              Currently a{" "}
               <TypeAnimation
                 sequence={[
-                  "developer",
+                  "Developer",
                   2000,
-                  "tinkerer",
+                  "Tinkerer",
                   2000,
-                  "designer",
+                  "Designer",
                   2000,
-                  "daydreamer",
+                  "Daydreamer",
                   2000,
                 ]}
                 wrapper="span"
@@ -86,8 +86,8 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
             className="max-w-xl mx-auto text-muted-foreground text-lg leading-relaxed"
           >
-            i make small internet things with care, coffee, and a slightly chaotic
-            sketchbook. pull up a chair — let's build something weird & wonderful.
+            I make small internet things with care, coffee, and a slightly chaotic
+            sketchbook. Pull up a chair — let's build something weird & wonderful.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -101,13 +101,13 @@ const Hero = () => {
               href="#projects"
               className="inline-flex items-center justify-center px-8 py-4 bg-foreground text-background font-semibold rounded-xl border-2 border-foreground hover:-translate-y-1 transition-transform shadow-[4px_4px_0_0_hsl(var(--primary))]"
             >
-              see my stuff →
+              See My Stuff →
             </a>
             <a
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-card font-semibold rounded-xl border-2 border-dashed border-foreground/40 hover:rotate-1 transition-transform"
             >
-              say hi
+              Say Hi
             </a>
           </motion.div>
         </motion.div>
@@ -125,7 +125,7 @@ const Hero = () => {
             transition={{ repeat: Infinity, duration: 2 }}
             className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-handwritten text-lg"
           >
-            <span>scroll!</span>
+            <span>Scroll</span>
             <ArrowDown className="w-5 h-5" />
           </motion.a>
         </motion.div>

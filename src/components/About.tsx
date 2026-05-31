@@ -4,26 +4,26 @@ import { Code2, Palette, Lightbulb, Zap } from "lucide-react";
 const skills = [
   {
     icon: Code2,
-    title: "building things",
-    description: "react, typescript, and a love for tiny details that make stuff feel alive.",
+    title: "Building Things",
+    description: "React, TypeScript, and a love for tiny details that make stuff feel alive.",
     tilt: "rotate-tiny-left",
   },
   {
     icon: Palette,
-    title: "designing things",
-    description: "interfaces that feel friendly — never sterile, never shouting.",
+    title: "Designing Things",
+    description: "Interfaces that feel friendly — never sterile, never shouting.",
     tilt: "rotate-tiny-right",
   },
   {
     icon: Lightbulb,
-    title: "figuring things out",
-    description: "i like messy problems and the quiet 'aha' when they finally click.",
+    title: "Figuring Things Out",
+    description: "I like messy problems and the quiet 'aha' when they finally click.",
     tilt: "rotate-tiny-left",
   },
   {
     icon: Zap,
-    title: "making it fast",
-    description: "snappy pages, smooth scrolls, no spinning wheels of doom.",
+    title: "Making It Fast",
+    description: "Snappy pages, smooth scrolls, no spinning wheels of doom.",
     tilt: "rotate-tiny-right",
   },
 ];
@@ -39,13 +39,13 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-right inline-block">a little</p>
+          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-right inline-block">A little</p>
           <h2 className="font-display italic text-4xl md:text-6xl font-black mb-6">
-            about <span className="text-gradient wiggle-underline">me</span>
+            About <span className="text-gradient wiggle-underline">Me</span>
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            i'm just a person who really enjoys making things on the internet.
-            half engineer, half collage artist, all in.
+            I'm just a person who really enjoys making things on the internet.
+            Half engineer, half collage artist, all in.
           </p>
         </motion.div>
 

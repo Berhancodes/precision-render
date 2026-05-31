@@ -17,13 +17,13 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-right inline-block">don't be shy</p>
+          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-right inline-block">Don't be shy</p>
           <h2 className="font-display italic text-4xl md:text-6xl font-black mb-6">
-            let's <span className="text-gradient wiggle-underline">connect</span>
+            Let's <span className="text-gradient wiggle-underline">Connect</span>
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            got an idea, a question, or just want to send a friendly hello?
-            my inbox is open and the kettle's on.
+            Got an idea, a question, or just want to send a friendly hello?
+            My inbox is open and the kettle's on.
           </p>
         </motion.div>
 
@@ -40,7 +40,7 @@ const Contact = () => {
                 <Mail className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-handwritten text-lg text-muted-foreground">email</p>
+                <p className="font-handwritten text-lg text-muted-foreground">Email</p>
                 <a href="mailto:berh3n@gmail.com" className="font-medium hover:text-primary transition-colors">berh3n@gmail.com</a>
               </div>
             </div>
@@ -50,14 +50,14 @@ const Contact = () => {
                 <MapPin className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-handwritten text-lg text-muted-foreground">location</p>
-                <p className="font-medium">available worldwide</p>
+                <p className="font-handwritten text-lg text-muted-foreground">Location</p>
+                <p className="font-medium">Available Worldwide</p>
               </div>
             </div>
           </div>
 
           <div className="pt-4">
-            <p className="font-handwritten text-lg text-muted-foreground mb-4">find me around the internet</p>
+            <p className="font-handwritten text-lg text-muted-foreground mb-4">Find me around the internet</p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a

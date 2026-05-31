@@ -32,7 +32,7 @@ const Navbar = () => {
       <nav className="container px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="font-handwritten text-3xl font-bold tracking-tight rotate-tiny-left inline-block">
-          <span className="text-gradient">berhan</span>
+          <span className="text-gradient">Berhan</span>
           <span className="text-primary">.</span>
         </a>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
                 href={link.href}
                 className="font-handwritten text-xl text-foreground/80 hover:text-primary hover:rotate-3 inline-block transition-all"
               >
-                {link.label.toLowerCase()}
+                {link.label}
               </a>
             </li>
           ))}

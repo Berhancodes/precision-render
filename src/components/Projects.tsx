@@ -41,12 +41,12 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-left inline-block">stuff i've made</p>
+          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-left inline-block">Stuff I've made</p>
           <h2 className="font-display italic text-4xl md:text-6xl font-black mb-6">
-            the <span className="text-gradient wiggle-underline">projects</span> shelf
+            The <span className="text-gradient wiggle-underline">Projects</span> Shelf
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            a little gallery of things i've built, broken, and (mostly) shipped.
+            A little gallery of things I've built, broken, and (mostly) shipped.
           </p>
         </motion.div>
 
@@ -66,7 +66,7 @@ const Projects = () => {
               <div className="relative overflow-hidden">
                 {project.currentlyBuilding && (
                   <span className="absolute top-3 left-3 z-10 px-3 py-1 font-handwritten text-base font-bold bg-accent text-accent-foreground rounded-full border-2 border-foreground rotate-[-6deg] shadow-[2px_2px_0_0_hsl(var(--foreground))]">
-                    currently building!
+                    Currently Building!
                   </span>
                 )}
                 <div className={`w-full h-48 flex items-center justify-center transition-transform duration-500 group-hover:scale-105 ${project.currentlyBuilding ? 'bg-[hsl(35,45%,90%)]' : ''}`}>
@@ -85,14 +85,14 @@ const Projects = () => {
                     className="flex items-center gap-2 px-4 py-2 bg-foreground text-background text-sm font-semibold rounded-lg border-2 border-foreground hover:-translate-y-0.5 transition shadow-[3px_3px_0_0_hsl(var(--primary))]"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    live demo
+                    Live Demo
                   </a>
                   <a
                     href={project.githubUrl}
                     className="flex items-center gap-2 px-4 py-2 bg-card text-sm font-semibold rounded-lg border-2 border-dashed border-foreground/40 hover:rotate-2 transition"
                   >
                     <Github className="w-4 h-4" />
-                    code
+                    Code
                   </a>
                 </div>
               </div>
