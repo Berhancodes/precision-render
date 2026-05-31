@@ -57,7 +57,7 @@ const Contact = () => {
           </div>
 
           <div className="pt-4">
-            <p className="font-handwritten text-lg text-muted-foreground mb-4">find me around the internet</p>
+            <p className="font-handwritten text-lg text-muted-foreground mb-4">Find me around the internet</p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
