@@ -48,14 +48,6 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="#contact"
-              className="px-5 py-2 bg-foreground text-background font-semibold rounded-lg border-2 border-foreground hover:-translate-y-0.5 transition-transform shadow-[3px_3px_0_0_hsl(var(--primary))]"
-            >
-              hire me ♡
-            </a>
-          </li>
         </ul>
 
         {/* Mobile Menu Button */}
