@@ -66,7 +66,7 @@ const Projects = () => {
               <div className="relative overflow-hidden">
                 {project.currentlyBuilding && (
                   <span className="absolute top-3 left-3 z-10 px-3 py-1 font-handwritten text-base font-bold bg-accent text-accent-foreground rounded-full border-2 border-foreground rotate-[-6deg] shadow-[2px_2px_0_0_hsl(var(--foreground))]">
-                    currently building!
+                    Currently Building!
                   </span>
                 )}
                 <div className={`w-full h-48 flex items-center justify-center transition-transform duration-500 group-hover:scale-105 ${project.currentlyBuilding ? 'bg-[hsl(35,45%,90%)]' : ''}`}>
