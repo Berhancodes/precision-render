@@ -81,15 +81,6 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <li className="pt-2">
-                <a
-                  href="#contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block w-full text-center py-3 bg-gradient-warm text-primary-foreground font-semibold rounded-lg"
-                >
-                  Hire Me
-                </a>
-              </li>
             </ul>
           </motion.div>
         )}
