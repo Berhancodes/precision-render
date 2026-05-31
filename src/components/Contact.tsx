@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, Github, Linkedin } from "lucide-react";
-import { useState } from "react";
+import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/berhancodes", label: "GitHub" },
@@ -8,18 +7,6 @@ const socialLinks = [
 ];
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-  };
-
   return (
     <section id="contact" className="py-24 md:py-32 bg-background">
       <div className="container px-6">
@@ -40,118 +27,51 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-warm flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium">berh3n@gmail.com</p>
-                </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="max-w-xl mx-auto space-y-8"
+        >
+          <div className="space-y-6">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-gradient-warm flex items-center justify-center shrink-0">
+                <Mail className="w-5 h-5 text-primary-foreground" />
               </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-warm flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Available Worldwide</p>
-                </div>
+              <div>
+                <p className="font-handwritten text-lg text-muted-foreground">email</p>
+                <a href="mailto:berh3n@gmail.com" className="font-medium hover:text-primary transition-colors">berh3n@gmail.com</a>
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="pt-4">
-              <p className="text-muted-foreground mb-4">Find me on social media</p>
-              <div className="flex gap-3">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="w-12 h-12 rounded-xl glass flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </a>
-                ))}
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-gradient-warm flex items-center justify-center shrink-0">
+                <MapPin className="w-5 h-5 text-primary-foreground" />
+              </div>
+              <div>
+                <p className="font-handwritten text-lg text-muted-foreground">location</p>
+                <p className="font-medium">available worldwide</p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Contact Form */}
-          <motion.form
-            onSubmit={handleSubmit}
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                placeholder="Your name"
-                required
-              />
+          <div className="pt-4">
+            <p className="font-handwritten text-lg text-muted-foreground mb-4">find me around the internet</p>
+            <div className="flex gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="w-12 h-12 rounded-xl glass flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:-rotate-6 transition-all duration-300"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                rows={5}
-                className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
-                placeholder="Tell me about your project..."
-                required
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-warm text-primary-foreground font-semibold rounded-xl hover:opacity-90 transition-all shadow-glow"
-            >
-              <Send className="w-5 h-5" />
-              Send Message
-            </button>
-          </motion.form>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
