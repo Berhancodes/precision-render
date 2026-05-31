@@ -41,12 +41,12 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-left inline-block">stuff i've made</p>
+          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-left inline-block">Stuff I've made</p>
           <h2 className="font-display italic text-4xl md:text-6xl font-black mb-6">
-            the <span className="text-gradient wiggle-underline">projects</span> shelf
+            The <span className="text-gradient wiggle-underline">Projects</span> Shelf
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            a little gallery of things i've built, broken, and (mostly) shipped.
+            A little gallery of things I've built, broken, and (mostly) shipped.
           </p>
         </motion.div>
 
