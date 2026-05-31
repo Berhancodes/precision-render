@@ -101,13 +101,13 @@ const Hero = () => {
               href="#projects"
               className="inline-flex items-center justify-center px-8 py-4 bg-foreground text-background font-semibold rounded-xl border-2 border-foreground hover:-translate-y-1 transition-transform shadow-[4px_4px_0_0_hsl(var(--primary))]"
             >
-              see my stuff →
+              See My Stuff →
             </a>
             <a
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-card font-semibold rounded-xl border-2 border-dashed border-foreground/40 hover:rotate-1 transition-transform"
             >
-              say hi
+              Say Hi
             </a>
           </motion.div>
         </motion.div>
