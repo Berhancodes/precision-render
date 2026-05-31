@@ -30,12 +30,13 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-            Let's <span className="text-gradient">Connect</span>
+          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-right inline-block">don't be shy</p>
+          <h2 className="font-display italic text-4xl md:text-6xl font-black mb-6">
+            let's <span className="text-gradient wiggle-underline">connect</span>
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            Have a project in mind or just want to say hello? 
-            I'd love to hear from you.
+            got an idea, a question, or just want to send a friendly hello?
+            my inbox is open and the kettle's on.
           </p>
         </motion.div>
 
