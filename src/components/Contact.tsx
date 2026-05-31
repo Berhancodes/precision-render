@@ -40,7 +40,7 @@ const Contact = () => {
                 <Mail className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-handwritten text-lg text-muted-foreground">email</p>
+                <p className="font-handwritten text-lg text-muted-foreground">Email</p>
                 <a href="mailto:berh3n@gmail.com" className="font-medium hover:text-primary transition-colors">berh3n@gmail.com</a>
               </div>
             </div>
@@ -50,8 +50,8 @@ const Contact = () => {
                 <MapPin className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-handwritten text-lg text-muted-foreground">location</p>
-                <p className="font-medium">available worldwide</p>
+                <p className="font-handwritten text-lg text-muted-foreground">Location</p>
+                <p className="font-medium">Available Worldwide</p>
               </div>
             </div>
           </div>
