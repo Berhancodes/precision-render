@@ -99,7 +99,9 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -127,5 +129,46 @@
 
   .glass {
     @apply bg-card/80 backdrop-blur-sm border border-border;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+    font-style: normal;
+    letter-spacing: 0;
+  }
+
+  /* Indie sticker: dashed border, slight tilt, hand-drawn vibe */
+  .sticker {
+    @apply border-2 border-dashed border-foreground/30 rounded-2xl bg-card;
+    box-shadow: 4px 4px 0 0 hsl(var(--foreground) / 0.12);
+  }
+
+  .tape {
+    position: absolute;
+    width: 80px;
+    height: 22px;
+    background: hsl(48 80% 75% / 0.7);
+    border: 1px solid hsl(48 60% 60% / 0.5);
+    box-shadow: 0 2px 4px hsl(0 0% 0% / 0.08);
+  }
+
+  .wiggle-underline {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 8'><path d='M0 4 Q 15 0 30 4 T 60 4 T 90 4 T 120 4' fill='none' stroke='%2329a3b8' stroke-width='2' stroke-linecap='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 8px;
+    padding-bottom: 8px;
+  }
+
+  .rotate-tiny-left { transform: rotate(-1.5deg); }
+  .rotate-tiny-right { transform: rotate(1.5deg); }
+  .rotate-small-left { transform: rotate(-3deg); }
+  .rotate-small-right { transform: rotate(3deg); }
+
+  /* Notebook paper feel */
+  .paper {
+    background-image:
+      radial-gradient(hsl(var(--foreground) / 0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
   }
 }

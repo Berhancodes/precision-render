@@ -60,7 +60,8 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'serif'],
+        handwritten: ['Caveat', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",
