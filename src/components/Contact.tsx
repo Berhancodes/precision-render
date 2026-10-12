@@ -1,77 +1,46 @@
-import { motion } from "framer-motion";
-import { Mail, MapPin, Github, Linkedin } from "lucide-react";
-
-const socialLinks = [
-  { icon: Github, href: "https://github.com/berhancodes", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/a-berhan-7158a5278", label: "LinkedIn" },
-];
+import avatarImage from "@/assets/avatar.png";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 md:py-32 bg-background">
-      <div className="container px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-right inline-block">Don't be shy</p>
-          <h2 className="font-display italic text-4xl md:text-6xl font-black mb-6">
-            Let's <span className="text-gradient wiggle-underline">Connect</span>
+    <section id="contact" className="mx-auto max-w-[1160px] px-4 pb-6 sm:px-6">
+      <div className="flex flex-wrap items-center justify-between gap-7 overflow-hidden rounded-[32px] bg-cocoa p-[clamp(32px,6vw,64px)] text-cream sm:rounded-[44px]">
+        <div className="flex min-w-0 flex-[999_1_420px] flex-col gap-3">
+          <h2 className="text-[clamp(2.1rem,5vw,3.6rem)] font-black leading-[1.05] tracking-[-0.03em]">
+            Have an idea? Let’s build it.
           </h2>
-          <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            Got an idea, a question, or just want to send a friendly hello?
-            My inbox is open and the kettle's on.
+          <p className="text-lg font-semibold text-sand">
+            Apps, websites, tools — I’d love to hear what you’re working on.
           </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="max-w-xl mx-auto space-y-8"
-        >
-          <div className="space-y-6">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-warm flex items-center justify-center shrink-0">
-                <Mail className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <div>
-                <p className="font-handwritten text-lg text-muted-foreground">Email</p>
-                <a href="mailto:berh3n@gmail.com" className="font-medium hover:text-primary transition-colors">berh3n@gmail.com</a>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-warm flex items-center justify-center shrink-0">
-                <MapPin className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <div>
-                <p className="font-handwritten text-lg text-muted-foreground">Location</p>
-                <p className="font-medium">Available Worldwide</p>
-              </div>
-            </div>
+          <div className="flex flex-col gap-2.5 pt-2 sm:flex-row sm:flex-wrap">
+            <a
+              href="mailto:berh3n@gmail.com"
+              className="rounded-full bg-cream px-6 py-[15px] text-center font-black text-ink transition-transform hover:-translate-y-0.5"
+            >
+              berh3n@gmail.com
+            </a>
+            <a
+              href="https://github.com/berhancodes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-cream/15 px-6 py-[15px] text-center font-black text-cream transition-transform hover:-translate-y-0.5"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/a-berhan-7158a5278"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-cream/15 px-6 py-[15px] text-center font-black text-cream transition-transform hover:-translate-y-0.5"
+            >
+              LinkedIn
+            </a>
           </div>
-
-          <div className="pt-4">
-            <p className="font-handwritten text-lg text-muted-foreground mb-4">Find me around the internet</p>
-            <div className="flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-12 h-12 rounded-xl glass flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:-rotate-6 transition-all duration-300"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-          </div>
-        </motion.div>
+        </div>
+        <img
+          src={avatarImage}
+          alt=""
+          className="h-[110px] w-[110px] flex-none animate-bob self-center rounded-full border-4 border-cream/30 object-cover sm:h-[160px] sm:w-[160px]"
+        />
       </div>
     </section>
   );

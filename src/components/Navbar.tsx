@@ -1,91 +1,37 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import avatarImage from "@/assets/avatar.png";
 
-const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+const links = [
+  { href: "#projects", label: "Projects" },
+  { href: "#about", label: "About" },
 ];
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass py-4" : "py-6"
-      }`}
-    >
-      <nav className="container px-6 flex items-center justify-between">
-        {/* Logo */}
-        <a href="#" className="font-handwritten text-3xl font-bold tracking-tight rotate-tiny-left inline-block">
-          <span className="text-gradient">Berhan</span>
-          <span className="text-primary">.</span>
+    <div className="sticky top-0 z-50 px-4 pt-4 sm:px-5">
+      <header className="mx-auto flex max-w-[1160px] items-center justify-between gap-3 rounded-full bg-white/90 py-2 pl-4 pr-2 shadow-soft backdrop-blur sm:pl-5">
+        <a href="#top" className="flex items-center gap-2.5 text-lg font-black text-ink">
+          <img src={avatarImage} alt="" className="h-8 w-8 rounded-full object-cover" />
+          Berhan
         </a>
-
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                className="font-handwritten text-xl text-foreground/80 hover:text-primary hover:rotate-3 inline-block transition-all"
-              >
-                {link.label}
-              </a>
-            </li>
+        <nav aria-label="Main" className="flex items-center gap-1 font-extrabold">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="hidden rounded-full px-4 py-3 text-ink transition-colors hover:text-gold-ink sm:inline-block"
+            >
+              {link.label}
+            </a>
           ))}
-        </ul>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg glass"
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </nav>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-t border-border"
+          <a
+            href="#contact"
+            className="rounded-full bg-cocoa px-5 py-3 text-cream transition-transform hover:-translate-y-0.5"
           >
-            <ul className="container px-6 py-6 space-y-4">
-              {navLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block py-2 text-lg font-medium hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.header>
+            Say hi
+          </a>
+        </nav>
+      </header>
+    </div>
   );
 };
 

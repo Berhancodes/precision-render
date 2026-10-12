@@ -93,15 +93,25 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Poppins', system-ui, sans-serif;
+    @apply antialiased;
+    background-color: #FCF6ED;
+    color: #3A2112;
+    font-family: 'Nunito', ui-rounded, system-ui, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', system-ui, sans-serif;
-    font-style: italic;
-    letter-spacing: -0.02em;
+    font-family: 'Nunito', ui-rounded, system-ui, sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-bob {
+      animation: none;
+    }
   }
 }
 

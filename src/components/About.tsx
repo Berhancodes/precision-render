@@ -1,72 +1,32 @@
-import { motion } from "framer-motion";
-import { Code2, Palette, Lightbulb, Zap } from "lucide-react";
+import avatarImage from "@/assets/avatar.png";
 
-const skills = [
-  {
-    icon: Code2,
-    title: "Building Things",
-    description: "React, TypeScript, and a love for tiny details that make stuff feel alive.",
-    tilt: "rotate-tiny-left",
-  },
-  {
-    icon: Palette,
-    title: "Designing Things",
-    description: "Interfaces that feel friendly — never sterile, never shouting.",
-    tilt: "rotate-tiny-right",
-  },
-  {
-    icon: Lightbulb,
-    title: "Figuring Things Out",
-    description: "I like messy problems and the quiet 'aha' when they finally click.",
-    tilt: "rotate-tiny-left",
-  },
-  {
-    icon: Zap,
-    title: "Making It Fast",
-    description: "Snappy pages, smooth scrolls, no spinning wheels of doom.",
-    tilt: "rotate-tiny-right",
-  },
-];
+const tools = ["React Native", "Expo", "TypeScript", "React", "Supabase", "Python", "AI / LLMs"];
 
 const About = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-background relative">
-      <div className="container px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <p className="font-handwritten text-2xl text-primary mb-2 rotate-tiny-right inline-block">A little</p>
-          <h2 className="font-display italic text-4xl md:text-6xl font-black mb-6">
-            About <span className="text-gradient wiggle-underline">Me</span>
+    <section id="about" className="mx-auto max-w-[1160px] px-4 pb-16 sm:px-6 sm:pb-24">
+      <div className="flex flex-col items-start gap-6 rounded-[32px] bg-peach p-7 sm:flex-row sm:flex-wrap sm:items-center sm:gap-10 sm:rounded-[44px] sm:p-[clamp(28px,5vw,52px)]">
+        <img
+          src={avatarImage}
+          alt="Berhan"
+          className="h-[110px] w-[110px] flex-none rounded-full border-4 border-white object-cover shadow-lift sm:h-[180px] sm:w-[180px] sm:border-[6px]"
+        />
+        <div className="flex min-w-0 flex-[999_1_420px] flex-col gap-3.5">
+          <h2 className="text-[clamp(1.9rem,3.6vw,2.6rem)] font-black tracking-[-0.03em]">
+            A little about me
           </h2>
-          <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            I'm just a person who really enjoys making things on the internet.
-            Half engineer, half collage artist, all in.
+          <p className="text-lg font-semibold leading-relaxed text-copy">
+            I’m a developer who can’t stop making things — apps, websites, bots and AI tools. I care
+            about the parts people feel: how an app greets you on a rough day, how a button responds
+            under your thumb, and whether your data is truly safe.
           </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className={`relative group p-6 sticker hover:rotate-0 hover:-translate-y-1 transition-all duration-300 ${skill.tilt}`}
-            >
-              <span className="tape -top-3 left-6 rotate-[-6deg]" />
-              <div className="w-14 h-14 rounded-xl bg-gradient-warm flex items-center justify-center mb-5">
-                <skill.icon className="w-7 h-7 text-primary-foreground" />
-              </div>
-              <h3 className="font-display italic text-2xl font-bold mb-3">{skill.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{skill.description}</p>
-            </motion.div>
-          ))}
+          <div className="flex flex-wrap gap-2">
+            {tools.map((tool) => (
+              <span key={tool} className="rounded-full bg-white px-3.5 py-2 font-extrabold">
+                {tool}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -14,6 +14,17 @@ export default {
     },
     extend: {
       colors: {
+        /* Soft app showcase palette */
+        ink: "#3A2112",
+        cocoa: "#6B4630",
+        cream: { DEFAULT: "#FCF6ED", soft: "#FFF9F1" },
+        butter: "#F7E9B0",
+        peach: "#FFF1E6",
+        gold: { DEFAULT: "#E6B84A", ink: "#8C631D" },
+        rose: "#C2716A",
+        copy: "#6E5A4B",
+        sand: "#E9DCC8",
+        "muted-ink": "#8A7565",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -59,8 +70,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Poppins', 'system-ui', 'sans-serif'],
-        display: ['Poppins', 'system-ui', 'sans-serif'],
+        sans: ['Nunito', 'ui-rounded', 'system-ui', 'sans-serif'],
+        display: ['Nunito', 'ui-rounded', 'system-ui', 'sans-serif'],
         handwritten: ['Caveat', 'cursive'],
       },
       borderRadius: {
@@ -68,7 +79,17 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      boxShadow: {
+        soft: "0 6px 24px rgba(107, 70, 48, 0.08)",
+        card: "0 8px 28px rgba(107, 70, 48, 0.07)",
+        lift: "0 20px 44px rgba(107, 70, 48, 0.16)",
+        tile: "0 10px 24px rgba(107, 70, 48, 0.12)",
+      },
       keyframes: {
+        bob: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -91,6 +112,7 @@ export default {
         },
       },
       animation: {
+        bob: "bob 5s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out forwards",

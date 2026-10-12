@@ -2,17 +2,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 border-t-2 border-dashed border-border bg-background">
-      <div className="container px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-handwritten text-lg text-muted-foreground">
-            © {currentYear} Berhan — made with love ♡
-          </p>
-          <p className="font-handwritten text-lg text-muted-foreground rotate-tiny-right">
-            Thanks for stopping by ✿
-          </p>
-        </div>
-      </div>
+    <footer className="px-4 pb-12 pt-6 text-center font-bold text-muted-ink sm:px-6">
+      © {currentYear} Berhan · Edmonton, Alberta
     </footer>
   );
 };
