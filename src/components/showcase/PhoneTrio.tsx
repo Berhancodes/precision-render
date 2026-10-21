@@ -4,7 +4,7 @@ import gentlyResetHome from "@/assets/screens/gentlyreset-home.jpg";
 
 import IPhone, { type PhoneFinish } from "./IPhone";
 import KidsScreen from "./KidsScreen";
-import NudgibooScreen from "./NudgibooScreen";
+import CouplesScreen from "./CouplesScreen";
 
 type Slot = {
   name: string;
@@ -21,11 +21,11 @@ type Slot = {
 
 const SLOTS: Slot[] = [
   {
-    name: "Nudgiboo",
+    name: "Couples app",
     description: "A cozy app for couples",
     comingSoon: true,
     finish: "blush",
-    screen: <NudgibooScreen />,
+    screen: <CouplesScreen />,
     tilt: -7,
     delay: 0.3,
     className: "z-0 w-[31%] -mr-[3%] mt-[9%]",
@@ -61,9 +61,9 @@ const SLOTS: Slot[] = [
   },
 ];
 
-/** Three iPhones: Nudgiboo, Gently Reset (center) and the kids learning app. */
+/** Three iPhones: a couples app, Gently Reset (center) and the kids learning app. */
 const PhoneTrio = () => (
-  <div className="relative mx-auto w-full max-w-[940px]">
+  <div id="apps" className="relative mx-auto w-full max-w-[940px] scroll-mt-24">
     {/* Soft glow behind the phones */}
     <span
       aria-hidden="true"

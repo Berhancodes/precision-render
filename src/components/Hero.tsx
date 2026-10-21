@@ -29,10 +29,10 @@ const Hero = () => {
         </p>
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
           <a
-            href="#projects"
+            href="#apps"
             className="rounded-full bg-salmon px-7 py-4 text-center text-[1.05rem] font-black text-white shadow-press transition-transform hover:-translate-y-0.5 active:translate-y-1 active:shadow-none"
           >
-            See my work
+            See my apps
           </a>
           <a
             href="#contact"

@@ -1,7 +1,7 @@
 import iconImage from "@/assets/icon.png";
 
 const links = [
-  { href: "#projects", label: "Projects" },
+  { href: "#apps", label: "Apps" },
   { href: "#about", label: "About" },
 ];
 
