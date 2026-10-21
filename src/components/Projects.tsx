@@ -9,7 +9,7 @@ const Projects = () => {
       className="mx-auto flex max-w-[1160px] flex-col gap-8 px-4 pb-16 sm:px-6 sm:pb-24"
     >
       <div className="flex flex-col gap-2">
-        <span className="text-sm font-black tracking-[0.08em] text-cherry">THINGS I’VE MADE</span>
+        <span className="text-sm font-black tracking-[0.08em] text-salmon">THINGS I’VE MADE</span>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-black tracking-[-0.03em]">Projects</h2>
         <p className="max-w-xl text-lg font-semibold text-copy">
           Apps, websites, bots and AI tools. Each one built to solve a real problem.
@@ -42,7 +42,7 @@ const Projects = () => {
                 ) : null}
               </div>
               <div className="flex flex-1 flex-col gap-2 p-[22px]">
-                <span className="text-[0.82rem] font-black uppercase tracking-[0.06em] text-cherry">
+                <span className="text-[0.82rem] font-black uppercase tracking-[0.06em] text-salmon">
                   {project.kind}
                 </span>
                 <h3 className="text-[1.35rem] font-black tracking-[-0.01em]">{project.title}</h3>

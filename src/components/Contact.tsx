@@ -3,7 +3,7 @@ import avatarImage from "@/assets/avatar.png";
 const Contact = () => {
   return (
     <section id="contact" className="mx-auto max-w-[1160px] px-4 pb-6 sm:px-6">
-      <div className="flex flex-wrap items-center justify-between gap-7 overflow-hidden rounded-[32px] bg-cherry p-[clamp(32px,6vw,64px)] text-white sm:rounded-[44px]">
+      <div className="flex flex-wrap items-center justify-between gap-7 overflow-hidden rounded-[32px] bg-salmon-deep p-[clamp(32px,6vw,64px)] text-white sm:rounded-[44px]">
         <div className="flex min-w-0 flex-[999_1_420px] flex-col gap-3">
           <h2 className="text-[clamp(2.1rem,5vw,3.6rem)] font-black leading-[1.05] tracking-[-0.03em]">
             Have an idea? Let’s build it.
