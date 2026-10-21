@@ -18,14 +18,14 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="hidden rounded-full px-4 py-3 text-ink transition-colors hover:text-gold-ink sm:inline-block"
+              className="hidden rounded-full px-4 py-3 text-ink transition-colors hover:text-cherry sm:inline-block"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-full bg-cocoa px-5 py-3 text-cream transition-transform hover:-translate-y-0.5"
+            className="rounded-full bg-cherry px-5 py-3 text-white transition-transform hover:-translate-y-0.5"
           >
             Say hi
           </a>

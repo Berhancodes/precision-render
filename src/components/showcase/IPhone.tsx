@@ -130,7 +130,7 @@ const IPhone = ({ finish, children, darkStatusBar, comingSoon }: IPhoneProps) =>
                 <>
                   <div className="h-full w-full scale-110 blur-[14px]">{children}</div>
                   <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/25">
-                    <span className="rounded-full bg-white/90 px-[30px] py-[16px] text-[30px] font-black tracking-[-0.01em] text-[#3A2112] shadow-[0_12px_30px_rgba(58,33,18,0.18)]">
+                    <span className="rounded-full bg-white/90 px-[30px] py-[16px] text-[30px] font-black tracking-[-0.01em] text-[#3B1422] shadow-[0_12px_30px_rgba(59,20,34,0.18)]">
                       Coming soon
                     </span>
                   </div>

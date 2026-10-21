@@ -21,7 +21,7 @@ const Hero = () => {
         <h1 className="text-[2.6rem] font-black leading-[1.04] tracking-[-0.035em] sm:text-[clamp(3rem,6.4vw,5.2rem)]">
           Hi, I’m Berhan.
           <br />
-          <span className="text-gold-ink">I make apps that feel good to use.</span>
+          <span className="text-cherry">I make apps that feel good to use.</span>
         </h1>
         <p className="max-w-[36rem] text-lg font-semibold leading-relaxed text-copy sm:text-xl">
           Cozy, thoughtful iPhone apps, designed, built and polished by me. Here’s what’s on my
@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
           <a
             href="#projects"
-            className="rounded-full bg-cocoa px-7 py-4 text-center text-[1.05rem] font-black text-cream shadow-lift transition-transform hover:-translate-y-0.5"
+            className="rounded-full bg-cherry px-7 py-4 text-center text-[1.05rem] font-black text-white shadow-lift transition-transform hover:-translate-y-0.5"
           >
             See my work
           </a>

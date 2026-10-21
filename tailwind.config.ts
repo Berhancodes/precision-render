@@ -15,16 +15,15 @@ export default {
     extend: {
       colors: {
         /* Soft app showcase palette */
-        ink: "#3A2112",
-        cocoa: "#6B4630",
+        ink: "#3B1422",
+        cherry: { DEFAULT: "#EE3B45", soft: "#FF6B6F" },
         cream: { DEFAULT: "#FCF6ED", soft: "#FFF9F1" },
         butter: "#F7E9B0",
         peach: "#FFF1E6",
-        gold: { DEFAULT: "#E6B84A", ink: "#8C631D" },
-        rose: "#C2716A",
-        copy: "#6E5A4B",
+        gold: "#E6B84A",
+        copy: "#6E5560",
         sand: "#E9DCC8",
-        "muted-ink": "#8A7565",
+        "muted-ink": "#A08591",
         blush: "#F9DCD6",
         mint: "#DDEFD9",
         sky: "#DCEAF6",
@@ -84,11 +83,11 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        soft: "0 6px 24px rgba(107, 70, 48, 0.08)",
-        card: "0 8px 28px rgba(107, 70, 48, 0.07)",
-        lift: "0 20px 44px rgba(107, 70, 48, 0.16)",
-        tile: "0 10px 24px rgba(107, 70, 48, 0.12)",
-        phone: "0 30px 60px rgba(107, 70, 48, 0.22), 0 8px 18px rgba(107, 70, 48, 0.12)",
+        soft: "0 6px 24px rgba(150, 30, 40, 0.08)",
+        card: "0 8px 28px rgba(150, 30, 40, 0.07)",
+        lift: "0 20px 44px rgba(150, 30, 40, 0.16)",
+        tile: "0 10px 24px rgba(150, 30, 40, 0.12)",
+        phone: "0 30px 60px rgba(150, 30, 40, 0.22), 0 8px 18px rgba(150, 30, 40, 0.12)",
       },
       keyframes: {
         bob: {
