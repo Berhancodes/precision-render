@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { projects } from "@/data/projects";
+import PhoneTrio from "@/components/PhoneTrio";
 
 const Hero = () => {
   return (
@@ -43,36 +43,7 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      {/* Every project, side by side */}
-      <motion.div
-        aria-hidden="true"
-        initial={{ opacity: 0, scale: 0.96 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.15 }}
-        className="grid min-w-0 flex-[1_1_380px] grid-cols-3 gap-2.5 rounded-[32px] bg-butter p-3.5 sm:gap-3.5 sm:rounded-[44px] sm:p-[22px]"
-      >
-        {projects.map((project, index) => {
-          const Icon = project.icon;
-          return (
-            <span
-              key={project.title}
-              className={`flex aspect-square items-center justify-center rounded-[20px] shadow-tile sm:rounded-[26px] ${
-                index % 2 === 0 ? "animate-bob" : ""
-              }`}
-              style={{
-                backgroundColor: project.image ? "#FFFFFF" : project.tint,
-                animationDelay: `${index * 0.6}s`,
-              }}
-            >
-              {project.image ? (
-                <img src={project.image} alt="" className="h-[64%] w-[64%] object-contain" />
-              ) : Icon ? (
-                <Icon className="h-[42%] w-[42%] text-ink" strokeWidth={1.8} />
-              ) : null}
-            </span>
-          );
-        })}
-      </motion.div>
+      <PhoneTrio />
     </section>
   );
 };

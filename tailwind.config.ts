@@ -25,6 +25,10 @@ export default {
         copy: "#6E5A4B",
         sand: "#E9DCC8",
         "muted-ink": "#8A7565",
+        blush: "#F9DCD6",
+        mint: "#DDEFD9",
+        sky: "#DCEAF6",
+        bezel: "#2B1A10",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -84,6 +88,7 @@ export default {
         card: "0 8px 28px rgba(107, 70, 48, 0.07)",
         lift: "0 20px 44px rgba(107, 70, 48, 0.16)",
         tile: "0 10px 24px rgba(107, 70, 48, 0.12)",
+        phone: "0 30px 60px rgba(107, 70, 48, 0.22), 0 8px 18px rgba(107, 70, 48, 0.12)",
       },
       keyframes: {
         bob: {
