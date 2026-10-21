@@ -12,7 +12,7 @@ const Projects = () => {
         <span className="text-sm font-black tracking-[0.08em] text-rose">THINGS I’VE MADE</span>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-black tracking-[-0.03em]">Projects</h2>
         <p className="max-w-xl text-lg font-semibold text-copy">
-          Apps, websites, bots and AI tools — each one built to solve a real problem.
+          Apps, websites, bots and AI tools. Each one built to solve a real problem.
         </p>
       </div>
 

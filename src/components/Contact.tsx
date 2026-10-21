@@ -9,7 +9,7 @@ const Contact = () => {
             Have an idea? Let’s build it.
           </h2>
           <p className="text-lg font-semibold text-sand">
-            Apps, websites, tools — I’d love to hear what you’re working on.
+            Apps, websites, tools: I’d love to hear what you’re working on.
           </p>
           <div className="flex flex-col gap-2.5 pt-2 sm:flex-row sm:flex-wrap">
             <a

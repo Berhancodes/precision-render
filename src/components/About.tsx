@@ -16,7 +16,7 @@ const About = () => {
             A little about me
           </h2>
           <p className="text-lg font-semibold leading-relaxed text-copy">
-            I’m a developer who can’t stop making things — apps, websites, bots and AI tools. I care
+            I’m a developer who can’t stop making things: apps, websites, bots and AI tools. I care
             about the parts people feel: how an app greets you on a rough day, how a button responds
             under your thumb, and whether your data is truly safe.
           </p>
