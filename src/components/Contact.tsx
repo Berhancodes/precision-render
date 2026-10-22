@@ -1,4 +1,4 @@
-import avatarImage from "@/assets/avatar.png";
+import iconImage from "@/assets/icon.png";
 
 const Contact = () => {
   return (
@@ -37,7 +37,7 @@ const Contact = () => {
           </div>
         </div>
         <img
-          src={avatarImage}
+          src={iconImage}
           alt=""
           className="h-[110px] w-[110px] flex-none animate-bob self-center rounded-full border-4 border-cream/30 object-cover sm:h-[160px] sm:w-[160px]"
         />
