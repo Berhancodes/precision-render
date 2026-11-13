@@ -14,6 +14,20 @@ export default {
     },
     extend: {
       colors: {
+        /* Soft app showcase palette */
+        ink: "#2B2424",
+        salmon: { DEFAULT: "#EF8A6B", deep: "#D46A4C", soft: "#F8B9A4" },
+        cream: { DEFAULT: "#FCF6ED", soft: "#FFF9F1" },
+        butter: "#F7E9B0",
+        peach: "#FFF1E6",
+        gold: "#E6B84A",
+        copy: "#77706D",
+        sand: "#E9DCC8",
+        "muted-ink": "#A39C98",
+        blush: "#F9DCD6",
+        mint: "#DDEFD9",
+        sky: "#DCEAF6",
+        bezel: "#2B1A10",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -59,8 +73,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Poppins', 'system-ui', 'sans-serif'],
-        display: ['Poppins', 'system-ui', 'sans-serif'],
+        sans: ['Nunito', 'ui-rounded', 'system-ui', 'sans-serif'],
+        display: ['Nunito', 'ui-rounded', 'system-ui', 'sans-serif'],
         handwritten: ['Caveat', 'cursive'],
       },
       borderRadius: {
@@ -68,7 +82,19 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      boxShadow: {
+        soft: "0 6px 24px rgba(60, 40, 35, 0.08)",
+        card: "0 8px 28px rgba(60, 40, 35, 0.07)",
+        lift: "0 20px 44px rgba(60, 40, 35, 0.16)",
+        tile: "0 10px 24px rgba(60, 40, 35, 0.12)",
+        press: "0 5px 0 #D46A4C, 0 14px 28px rgba(212, 106, 76, 0.28)",
+        phone: "0 30px 60px rgba(60, 40, 35, 0.22), 0 8px 18px rgba(60, 40, 35, 0.12)",
+      },
       keyframes: {
+        bob: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -91,6 +117,7 @@ export default {
         },
       },
       animation: {
+        bob: "bob 5s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out forwards",
