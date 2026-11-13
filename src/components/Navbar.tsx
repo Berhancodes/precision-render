@@ -1,5 +1,3 @@
-import iconImage from "@/assets/icon.png";
-
 const links = [
   { href: "#apps", label: "Apps" },
   { href: "#about", label: "About" },
@@ -9,8 +7,7 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 px-4 pt-4 sm:px-5">
       <header className="mx-auto flex max-w-[1160px] items-center justify-between gap-3 rounded-full bg-white/90 py-2 pl-4 pr-2 shadow-soft backdrop-blur sm:pl-5">
-        <a href="#top" className="flex items-center gap-2.5 text-lg font-black text-ink">
-          <img src={iconImage} alt="" className="h-8 w-8 rounded-full object-cover" />
+        <a href="#top" className="text-lg font-black text-ink">
           Berhan
         </a>
         <nav aria-label="Main" className="flex items-center gap-1 font-extrabold">

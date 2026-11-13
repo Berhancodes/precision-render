@@ -58,8 +58,8 @@ type IPhoneProps = {
   children: ReactNode;
   /** White status bar text for dark screens. */
   darkStatusBar?: boolean;
-  /** Blur the screen and show a "Coming soon" badge over it. */
-  comingSoon?: boolean;
+  /** Set false when the screen is a screenshot that already has a status bar. */
+  statusBar?: boolean;
 };
 
 /**
@@ -67,7 +67,7 @@ type IPhoneProps = {
  * bezel, Dynamic Island, side buttons), scaled to fill its container's width.
  * Children render on a 402×874pt screen, so mock screens use plain px.
  */
-const IPhone = ({ finish, children, darkStatusBar, comingSoon }: IPhoneProps) => {
+const IPhone = ({ finish, children, darkStatusBar, statusBar = true }: IPhoneProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(0);
   const { band, button } = FINISHES[finish];
@@ -125,19 +125,8 @@ const IPhone = ({ finish, children, darkStatusBar, comingSoon }: IPhoneProps) =>
             {/* Screen */}
             <div className="relative h-full w-full overflow-hidden rounded-[58px] bg-white">
               <span className="absolute left-1/2 top-[11px] z-30 h-[37px] w-[124px] -translate-x-1/2 rounded-full bg-black" />
-              <StatusBar dark={darkStatusBar} />
-              {comingSoon ? (
-                <>
-                  <div className="h-full w-full scale-110 blur-[14px]">{children}</div>
-                  <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/25">
-                    <span className="rounded-full bg-white/90 px-[30px] py-[16px] text-[30px] font-black tracking-[-0.01em] text-[#2B2424] shadow-[0_12px_30px_rgba(43,36,36,0.18)]">
-                      Coming soon
-                    </span>
-                  </div>
-                </>
-              ) : (
-                children
-              )}
+              {statusBar && <StatusBar dark={darkStatusBar} />}
+              {children}
               {/* Home indicator */}
               <span
                 className="absolute bottom-[8px] left-1/2 z-30 h-[5px] w-[140px] -translate-x-1/2 rounded-full"

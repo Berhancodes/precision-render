@@ -1,10 +1,8 @@
-import iconImage from "@/assets/icon.png";
-
 const Contact = () => {
   return (
     <section id="contact" className="mx-auto max-w-[1160px] px-4 pb-6 sm:px-6">
-      <div className="flex flex-wrap items-center justify-between gap-7 overflow-hidden rounded-[32px] bg-salmon-deep p-[clamp(32px,6vw,64px)] text-white sm:rounded-[44px]">
-        <div className="flex min-w-0 flex-[999_1_420px] flex-col gap-3">
+      <div className="overflow-hidden rounded-[32px] bg-salmon-deep p-[clamp(32px,6vw,64px)] text-white sm:rounded-[44px]">
+        <div className="flex min-w-0 flex-col gap-3">
           <h2 className="text-[clamp(2.1rem,5vw,3.6rem)] font-black leading-[1.05] tracking-[-0.03em]">
             Have an idea? Let’s build it.
           </h2>
@@ -36,11 +34,6 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <img
-          src={iconImage}
-          alt=""
-          className="h-[110px] w-[110px] flex-none animate-bob self-center rounded-full border-4 border-cream/30 object-cover sm:h-[160px] sm:w-[160px]"
-        />
       </div>
     </section>
   );
